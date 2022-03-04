@@ -1,0 +1,44 @@
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+    <h1>Right-align a Table</h1>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>email</th>
+            <th>age</th>
+            <th>city</th>
+        </tr>
+        <%users.forEach(user=>{%>
+            <tr>
+                <td>
+                    <%=user.name%>
+                </td>
+                <td>
+                    <%=user.email%>
+                </td>
+                <td>
+                    <%=user.age%>
+                </td>
+                <td>
+                    <%=user.city%>
+                </td>
+            </tr>
+            <%})%>
+                <a href="/form">Add user</a>
+    </table>
+
+
+
+
+
+
+
+
+
